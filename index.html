@@ -19,7 +19,7 @@
 
 <div class="container">
     <h2>JSON Formatter & Beautifier</h2>
-    <textarea id="jsonInput" placeholder="Apna messy JSON code yahan paste karein..."></textarea>
+    <textarea id="jsonInput" placeholder="Paste your messy JSON code here..."></textarea>
     
     <div class="buttons">
         <button onclick="formatJSON()">Format / Beautify</button>
@@ -36,7 +36,7 @@
         let errorDiv = document.getElementById('errorMsg');
         try {
             if(!input.trim()) {
-                errorDiv.innerText = "Kripya kuch JSON data enter karein!";
+                errorDiv.innerText = "Please enter some JSON data!";
                 return;
             }
             let parsed = JSON.parse(input);
@@ -52,7 +52,7 @@
         let errorDiv = document.getElementById('errorMsg');
         try {
             if(!input.trim()) {
-                errorDiv.innerText = "Kripya kuch JSON data enter karein!";
+                errorDiv.innerText = "Please enter some JSON data!";
                 return;
             }
             let parsed = JSON.parse(input);
